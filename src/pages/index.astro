@@ -2,12 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Counter from '../components/Counter.vue';
+import Counter2 from '../components/Counter2.vue';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<Counter client:load style="margin-top:200vh"/>
+		<Counter client:visible/>
+		<Counter2 client:visible/>
 		<svg
 			class="astro-a"
 			width="495"
